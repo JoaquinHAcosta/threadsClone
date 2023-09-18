@@ -18,7 +18,7 @@ const threadSchema = new mongoose.Schema({
     parentId: {
         type: String
     },
-    childre: [
+    children: [
         {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Thread'
