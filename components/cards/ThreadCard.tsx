@@ -52,9 +52,10 @@ const ThreadCard = ({
                                 className='cursor-pointer rounded-full'
                             />
                         </Link>
-                    </div>
 
                         <div className='thread-card_bar'/>
+                    </div>
+
 
                         <div className='flex w-full flex-col'>
                             <Link href={`/profile/${author.id}`} className='w-fit'>
@@ -63,7 +64,7 @@ const ThreadCard = ({
 
                             <p className='mt-2 text-small-regular text-light-2'>{content}</p>
 
-                            <div className='mt-5 flex flex-col gap-3'>
+                            <div className={`${isComment && 'mb-10'} mt-5 flex flex-col gap-3`}>
                                 {/* as an extra i should add funcionality from this buttons */}
                                 <div className='flex gap-3.5'>
                                     <Image src='/assets/heart-gray.svg' alt='hearth' width={24} height={24} 
